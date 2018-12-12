@@ -1,5 +1,8 @@
 package com.cicoding.integration;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
 /**
  * com.cicoding.integration
  * <strong>描述：</strong>
@@ -10,5 +13,8 @@ package com.cicoding.integration;
  * @author: wangjun
  * @date: 2018/12/12.
  */
-public class UserRepository {
+public interface UserRepository extends JpaRepository<User,Long>{
+    @Override
+    User getOne(Long aLong);
+
 }

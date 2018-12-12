@@ -11,4 +11,5 @@ package com.cicoding.integration.pojo;
  * @date: 2018/12/11.
  */
 public class User {
+
 }
