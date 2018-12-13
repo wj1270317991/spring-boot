@@ -1,6 +1,6 @@
 ## 特别提醒
 redis
-2.0以后引用
+springboot2.0以后引用
        
         <dependency>
             <groupId>org.springframework.boot</groupId>
