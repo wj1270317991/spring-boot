@@ -6,7 +6,10 @@ import com.cicoding.integration.user.UserService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
@@ -31,8 +34,9 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
+
     @Autowired
-    private RedisTemplate<String,String> redisTemplate;
+    private RedisTemplate<String,User> redisTemplate;
 
     @GetMapping("list")
     public String list() {
@@ -56,9 +60,10 @@ public class UserController {
     @ApiOperation(value="redis", notes="")
     @RequestMapping(value="redis", method= RequestMethod.POST)
     public String postUser() {
-        redisTemplate.opsForValue().set("test","test",1000);
-        String test = redisTemplate.opsForValue().get("test");
-        return test;
+        User dddd = new User("dddd", 1);
+        redisTemplate.opsForValue().set("aaaaaaa",dddd);
+        User aaaaaaa = redisTemplate.opsForValue().get("aaaaaaa");
+        return aaaaaaa.toString();
     }
 
 
