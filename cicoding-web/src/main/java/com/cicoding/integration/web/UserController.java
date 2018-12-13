@@ -5,6 +5,7 @@ import com.cicoding.integration.pojo.User;
 import com.cicoding.integration.user.UserService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -30,6 +31,9 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private RedisTemplate<String,String> redisTemplate;
+
     @GetMapping("list")
     public String list() {
         /*
@@ -49,12 +53,15 @@ public class UserController {
     }
 
 
-    @ApiOperation(value="获取用户列表", notes="")
-    @RequestMapping(value="/", method= RequestMethod.POST)
-    public String postUser(@ModelAttribute User user) {
-        // 处理"/users/"的POST请求，用来创建User
-        // 除了@ModelAttribute绑定参数之外，还可以通过@RequestParam从页面中传递参数
-        return "1111";
+    @ApiOperation(value="redis", notes="")
+    @RequestMapping(value="redis", method= RequestMethod.POST)
+    public String postUser() {
+        redisTemplate.opsForValue().set("test","test",1000);
+        String test = redisTemplate.opsForValue().get("test");
+        return test;
     }
+
+
+
 
 }
