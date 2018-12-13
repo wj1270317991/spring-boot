@@ -1,2 +1,7 @@
 com/cicoding/integration/web/UserController.class
+com/cicoding/integration/mongo/MyMongoRepository.class
+com/cicoding/integration/redis/RedisObjectSerializer.class
+com/cicoding/integration/redis/RedisConfig.class
+com/cicoding/integration/pojo/User.class
 com/cicoding/integration/MmWebApplication.class
+com/cicoding/integration/swagger2/Swagger2.class

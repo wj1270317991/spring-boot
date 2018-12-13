@@ -1,9 +1,11 @@
 package com.cicoding.integration.web;
 
 import com.cicoding.integration.UserRepository;
+import com.cicoding.integration.mongo.MyMongoRepository;
 import com.cicoding.integration.pojo.User;
 import com.cicoding.integration.user.UserService;
 import io.swagger.annotations.ApiOperation;
+import org.junit.Assert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -38,6 +40,10 @@ public class UserController {
     @Autowired
     private RedisTemplate<String,User> redisTemplate;
 
+
+    @Autowired
+    private MyMongoRepository myMongoRepository;
+
     @GetMapping("list")
     public String list() {
         /*
@@ -67,6 +73,17 @@ public class UserController {
     }
 
 
+    @ApiOperation(value="mongo", notes="")
+    @RequestMapping(value="mongo", method= RequestMethod.POST)
+    public String mongo() {
+        // 创建三个User，并验证User总数
+
+        myMongoRepository.save(new User("ni",30));
+        myMongoRepository.save(new User("mama", 40));
+        myMongoRepository.save(new User("kaka", 50));
+        List<User> all = myMongoRepository.findAll();
+        return null;
+    }
 
 
 }

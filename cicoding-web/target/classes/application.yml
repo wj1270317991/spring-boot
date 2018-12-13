@@ -11,6 +11,11 @@ spring:
       pool:
         max-active: 8
         max-wait: 1
+  data:
+    mongodb:
+      port: 27017
+      host: 127.0.0.1
+      uri: mongodb://localhost/test
 
 server:
   port: 8899
