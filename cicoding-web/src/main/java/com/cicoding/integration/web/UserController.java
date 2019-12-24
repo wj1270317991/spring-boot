@@ -44,9 +44,11 @@ public class UserController {
     @Autowired
     private MyMongoRepository myMongoRepository;
 
+
+    @ApiOperation(value="db", notes="")
     @GetMapping("list")
-    public String list() {
-        /*
+    public List list() {
+
         userRepository.save(new com.cicoding.integration.User("AAA",10));
         userRepository.save(new com.cicoding.integration.User("BBB", 20));
         userRepository.save(new com.cicoding.integration.User("CCC", 30));
@@ -57,9 +59,9 @@ public class UserController {
         userRepository.save(new com.cicoding.integration.User("HHH", 80));
         userRepository.save(new com.cicoding.integration.User("III", 90));
         userRepository.save(new com.cicoding.integration.User("JJJ", 100));
-        */
+
         List<com.cicoding.integration.User> all = userRepository.findAll();
-        return null;
+        return all;
     }
 
 
@@ -77,7 +79,6 @@ public class UserController {
     @RequestMapping(value="mongo", method= RequestMethod.POST)
     public String mongo() {
         // 创建三个User，并验证User总数
-
         myMongoRepository.save(new User("ni",30));
         myMongoRepository.save(new User("mama", 40));
         myMongoRepository.save(new User("kaka", 50));

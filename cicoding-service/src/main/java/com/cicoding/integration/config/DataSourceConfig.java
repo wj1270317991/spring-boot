@@ -1,5 +1,6 @@
 package com.cicoding.integration.config;
 
+import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
@@ -22,6 +23,7 @@ import javax.sql.DataSource;
  */
 @Configuration
 public class DataSourceConfig {
+
     @Bean(name = "primaryDataSource")
     @Qualifier("primaryDataSource")
     @ConfigurationProperties(prefix="spring.datasource.primary")
@@ -30,12 +32,20 @@ public class DataSourceConfig {
     }
 
 
-    @Bean(name = "secondaryDataSource")
+    @Bean(name = {"secondaryDataSource"})
     @Qualifier("secondaryDataSource")
     @Primary
     @ConfigurationProperties(prefix="spring.datasource.secondary")
     public DataSource secondaryDataSource() {
-        return DataSourceBuilder.create().build();
+//        DataSource dataSource = DataSourceBuilder.create().build();
+//        Class<? extends DataSource> aClass = dataSource.getClass();
+//        return dataSource;
+        DruidDataSource datasource = new DruidDataSource();
+        datasource.setUrl("jdbc:mysql://localhost:3306/test");
+        datasource.setUsername("root");
+        datasource.setPassword("wj123456");
+        datasource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        return datasource;
     }
 
 
@@ -44,7 +54,7 @@ public class DataSourceConfig {
         return new JdbcTemplate(dataSource);
     }
 
-
+    //要启用
     @Bean(name = "secondaryJdbcTemplate")
     public JdbcTemplate secondaryJdbcTemplate(@Qualifier("secondaryDataSource") DataSource dataSource) {
         return new JdbcTemplate(dataSource);
