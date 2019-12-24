@@ -1,7 +1,0 @@
-/Users/wangjun/Java-local/springboot-multi-module/cicoding-web/src/main/java/com/cicoding/integration/redis/RedisConfig.java
-/Users/wangjun/Java-local/springboot-multi-module/cicoding-web/src/main/java/com/cicoding/integration/swagger2/Swagger2.java
-/Users/wangjun/Java-local/springboot-multi-module/cicoding-web/src/main/java/com/cicoding/integration/mongo/MyMongoRepository.java
-/Users/wangjun/Java-local/springboot-multi-module/cicoding-web/src/main/java/com/cicoding/integration/redis/RedisObjectSerializer.java
-/Users/wangjun/Java-local/springboot-multi-module/cicoding-web/src/main/java/com/cicoding/integration/pojo/User.java
-/Users/wangjun/Java-local/springboot-multi-module/cicoding-web/src/main/java/com/cicoding/integration/web/UserController.java
-/Users/wangjun/Java-local/springboot-multi-module/cicoding-web/src/main/java/com/cicoding/integration/MmWebApplication.java
