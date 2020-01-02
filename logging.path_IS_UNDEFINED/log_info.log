@@ -1,0 +1,435 @@
+2019-12-27 15:08:21.130 [main] INFO  com.cicoding.integration.MmWebApplication - Starting MmWebApplication on wangjundeMBP.lan with PID 4531 (/Users/wangjun/java-local/spring-boot/cicoding-web/target/classes started by wangjun in /Users/wangjun/java-local/spring-boot)
+2019-12-27 15:08:21.133 [main] INFO  com.cicoding.integration.MmWebApplication - The following profiles are active: dev
+2019-12-27 15:08:22.056 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 15:08:22.057 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-27 15:08:22.112 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.mongo.MyMongoRepository.
+2019-12-27 15:08:22.146 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77ms. Found 1 repository interfaces.
+2019-12-27 15:08:22.170 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 15:08:22.170 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-27 15:08:22.176 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.UserRepository.
+2019-12-27 15:08:22.178 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 1 repository interfaces.
+2019-12-27 15:08:22.190 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 15:08:22.191 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-27 15:08:22.210 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.mongo.MyMongoRepository.
+2019-12-27 15:08:22.211 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.UserRepository.
+2019-12-27 15:08:22.211 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-12-27 15:08:22.713 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b2c703f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 15:08:22.849 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$32475128] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 15:08:23.294 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8898 (http)
+2019-12-27 15:08:23.305 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8898"]
+2019-12-27 15:08:23.313 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 15:08:23.314 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-12-27 15:08:23.320 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangjun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-27 15:08:23.425 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-12-27 15:08:23.425 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2248 ms
+2019-12-27 15:08:23.747 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-27 15:08:24.153 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-27 15:08:24.305 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-27 15:08:24.308 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-12-27 15:08:24.603 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-27 15:08:24.859 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-27 15:08:25.868 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3ee68377'
+2019-12-27 15:08:25.873 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-27 15:08:26.493 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-12-27 15:08:26.728 [cluster-ClusterId{value='5e05adea061a8a11b3e18a6c', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:14}] to localhost:27017
+2019-12-27 15:08:26.734 [cluster-ClusterId{value='5e05adea061a8a11b3e18a6c', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 1]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3941025}
+2019-12-27 15:08:27.476 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 15:08:27.880 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 15:08:27.904 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+2019-12-27 15:08:27.913 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 15:08:27.920 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method list was user-controller
+2019-12-27 15:08:27.922 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.cicoding.integration.web.UserController}]] 
+2019-12-27 15:08:27.924 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method mongo was user-controller
+2019-12-27 15:08:27.924 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Request mapping: mongo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.cicoding.integration.web.UserController}]] 
+2019-12-27 15:08:27.924 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method postUser was user-controller
+2019-12-27 15:08:27.924 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Request mapping: postUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.cicoding.integration.web.UserController}]] 
+2019-12-27 15:08:27.928 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2019-12-27 15:08:27.952 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List(true)
+2019-12-27 15:08:27.952 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.util.List(true)
+2019-12-27 15:08:27.957 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List(true)
+2019-12-27 15:08:27.957 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.util.List(true)
+2019-12-27 15:08:27.961 [main] INFO  s.d.schema.property.ModelPropertiesKeyGenerator - Cache key generated: java.util.List(true)
+2019-12-27 15:08:27.961 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key java.util.List(true)
+2019-12-27 15:08:27.966 [main] INFO  s.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /user/list.com.cicoding.integration.web.UserController.list.DefaultGenericTypeNamingStrategy
+2019-12-27 15:08:27.966 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/list.com.cicoding.integration.web.UserController.list.DefaultGenericTypeNamingStrategy
+2019-12-27 15:08:27.979 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method list was user-controller
+2019-12-27 15:08:27.993 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method list was user-controller
+2019-12-27 15:08:28.000 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:08:28.000 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+2019-12-27 15:08:28.000 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:08:28.000 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2019-12-27 15:08:28.000 [main] INFO  s.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /user/mongo.com.cicoding.integration.web.UserController.mongo.DefaultGenericTypeNamingStrategy
+2019-12-27 15:08:28.000 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/mongo.com.cicoding.integration.web.UserController.mongo.DefaultGenericTypeNamingStrategy
+2019-12-27 15:08:28.001 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method mongo was user-controller
+2019-12-27 15:08:28.001 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method mongo was user-controller
+2019-12-27 15:08:28.002 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:08:28.002 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+2019-12-27 15:08:28.002 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:08:28.002 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2019-12-27 15:08:28.002 [main] INFO  s.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /user/redis.com.cicoding.integration.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2019-12-27 15:08:28.003 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/redis.com.cicoding.integration.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2019-12-27 15:08:28.003 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method postUser was user-controller
+2019-12-27 15:08:28.003 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method postUser was user-controller
+2019-12-27 15:08:28.024 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8898"]
+2019-12-27 15:08:28.046 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-12-27 15:08:28.059 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8898 (http) with context path ''
+2019-12-27 15:08:28.062 [main] INFO  com.cicoding.integration.MmWebApplication - Started MmWebApplication in 8.024 seconds (JVM running for 8.864)
+2019-12-27 15:10:38.267 [Thread-18] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 15:10:38.284 [Thread-18] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-27 15:10:38.285 [Thread-18] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-27 15:10:38.385 [Thread-18] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2019-12-27 15:10:38.393 [Thread-18] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-12-27 15:11:37.221 [main] INFO  com.cicoding.integration.MmWebApplication - Starting MmWebApplication on wangjundeMBP.lan with PID 4566 (/Users/wangjun/java-local/spring-boot/cicoding-web/target/classes started by wangjun in /Users/wangjun/java-local/spring-boot)
+2019-12-27 15:11:37.224 [main] INFO  com.cicoding.integration.MmWebApplication - The following profiles are active: dev
+2019-12-27 15:11:38.038 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 15:11:38.039 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-27 15:11:38.073 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.mongo.MyMongoRepository.
+2019-12-27 15:11:38.101 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56ms. Found 1 repository interfaces.
+2019-12-27 15:11:38.118 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 15:11:38.119 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-27 15:11:38.124 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.UserRepository.
+2019-12-27 15:11:38.126 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 1 repository interfaces.
+2019-12-27 15:11:38.135 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 15:11:38.135 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-27 15:11:38.144 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.mongo.MyMongoRepository.
+2019-12-27 15:11:38.145 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.UserRepository.
+2019-12-27 15:11:38.145 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2019-12-27 15:11:38.576 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6cd3ea40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 15:11:38.684 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$ec543772] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 15:11:39.022 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8898 (http)
+2019-12-27 15:11:39.032 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8898"]
+2019-12-27 15:11:39.040 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 15:11:39.040 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-12-27 15:11:39.046 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangjun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-27 15:11:39.122 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-12-27 15:11:39.122 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1857 ms
+2019-12-27 15:11:39.361 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-27 15:11:39.685 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-27 15:11:39.766 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-27 15:11:39.767 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-12-27 15:11:39.869 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-27 15:11:40.004 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-27 15:11:40.590 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5a537a16'
+2019-12-27 15:11:40.595 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-27 15:11:41.200 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-12-27 15:11:41.255 [cluster-ClusterId{value='5e05aead061a8a11d6fd6be8', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:15}] to localhost:27017
+2019-12-27 15:11:41.259 [cluster-ClusterId{value='5e05aead061a8a11d6fd6be8', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 1]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2450632}
+2019-12-27 15:11:41.911 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 15:11:42.235 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 15:11:42.247 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+2019-12-27 15:11:42.255 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 15:11:42.258 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method list was user-controller
+2019-12-27 15:11:42.260 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.cicoding.integration.web.UserController}]] 
+2019-12-27 15:11:42.261 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method mongo was user-controller
+2019-12-27 15:11:42.261 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Request mapping: mongo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.cicoding.integration.web.UserController}]] 
+2019-12-27 15:11:42.261 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method postUser was user-controller
+2019-12-27 15:11:42.261 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Request mapping: postUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.cicoding.integration.web.UserController}]] 
+2019-12-27 15:11:42.264 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2019-12-27 15:11:42.283 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List(true)
+2019-12-27 15:11:42.284 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.util.List(true)
+2019-12-27 15:11:42.288 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List(true)
+2019-12-27 15:11:42.288 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.util.List(true)
+2019-12-27 15:11:42.292 [main] INFO  s.d.schema.property.ModelPropertiesKeyGenerator - Cache key generated: java.util.List(true)
+2019-12-27 15:11:42.292 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key java.util.List(true)
+2019-12-27 15:11:42.296 [main] INFO  s.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /user/list.com.cicoding.integration.web.UserController.list.DefaultGenericTypeNamingStrategy
+2019-12-27 15:11:42.296 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/list.com.cicoding.integration.web.UserController.list.DefaultGenericTypeNamingStrategy
+2019-12-27 15:11:42.307 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method list was user-controller
+2019-12-27 15:11:42.315 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method list was user-controller
+2019-12-27 15:11:42.322 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:11:42.322 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+2019-12-27 15:11:42.322 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:11:42.322 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2019-12-27 15:11:42.322 [main] INFO  s.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /user/mongo.com.cicoding.integration.web.UserController.mongo.DefaultGenericTypeNamingStrategy
+2019-12-27 15:11:42.322 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/mongo.com.cicoding.integration.web.UserController.mongo.DefaultGenericTypeNamingStrategy
+2019-12-27 15:11:42.323 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method mongo was user-controller
+2019-12-27 15:11:42.323 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method mongo was user-controller
+2019-12-27 15:11:42.324 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:11:42.324 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+2019-12-27 15:11:42.324 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:11:42.324 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2019-12-27 15:11:42.325 [main] INFO  s.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /user/redis.com.cicoding.integration.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2019-12-27 15:11:42.325 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/redis.com.cicoding.integration.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2019-12-27 15:11:42.325 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method postUser was user-controller
+2019-12-27 15:11:42.325 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method postUser was user-controller
+2019-12-27 15:11:42.337 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8898"]
+2019-12-27 15:11:42.358 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-12-27 15:11:42.371 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8898 (http) with context path ''
+2019-12-27 15:11:42.375 [main] INFO  com.cicoding.integration.MmWebApplication - Started MmWebApplication in 6.046 seconds (JVM running for 6.862)
+2019-12-27 15:11:54.604 [http-nio-8898-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 15:11:54.605 [http-nio-8898-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 15:11:54.614 [http-nio-8898-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2019-12-27 15:11:59.358 [Thread-14] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 15:11:59.372 [Thread-14] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-27 15:11:59.373 [Thread-14] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-27 15:11:59.434 [Thread-14] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2019-12-27 15:11:59.438 [Thread-14] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-12-27 15:12:17.112 [main] INFO  com.cicoding.integration.MmWebApplication - Starting MmWebApplication on wangjundeMBP.lan with PID 4586 (/Users/wangjun/java-local/spring-boot/cicoding-web/target/classes started by wangjun in /Users/wangjun/java-local/spring-boot)
+2019-12-27 15:12:17.115 [main] INFO  com.cicoding.integration.MmWebApplication - The following profiles are active: dev
+2019-12-27 15:12:17.950 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 15:12:17.951 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-27 15:12:17.988 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.mongo.MyMongoRepository.
+2019-12-27 15:12:18.015 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58ms. Found 1 repository interfaces.
+2019-12-27 15:12:18.032 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 15:12:18.032 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-27 15:12:18.038 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.UserRepository.
+2019-12-27 15:12:18.041 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 1 repository interfaces.
+2019-12-27 15:12:18.051 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 15:12:18.052 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-27 15:12:18.061 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.mongo.MyMongoRepository.
+2019-12-27 15:12:18.061 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.UserRepository.
+2019-12-27 15:12:18.061 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2019-12-27 15:12:18.446 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6ac0707f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 15:12:18.547 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$ea40bdb1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 15:12:18.874 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8898 (http)
+2019-12-27 15:12:18.884 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8898"]
+2019-12-27 15:12:18.891 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 15:12:18.891 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-12-27 15:12:18.896 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangjun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-27 15:12:18.967 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-12-27 15:12:18.967 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1808 ms
+2019-12-27 15:12:19.192 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-27 15:12:19.506 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-27 15:12:19.583 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-27 15:12:19.584 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-12-27 15:12:19.685 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-27 15:12:19.817 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-27 15:12:20.353 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5614ae05'
+2019-12-27 15:12:20.358 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-27 15:12:20.941 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-12-27 15:12:20.987 [cluster-ClusterId{value='5e05aed4061a8a11ea2c371c', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:16}] to localhost:27017
+2019-12-27 15:12:20.991 [cluster-ClusterId{value='5e05aed4061a8a11ea2c371c', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 1]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2283760}
+2019-12-27 15:12:21.619 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 15:12:21.930 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 15:12:21.943 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+2019-12-27 15:12:21.951 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 15:12:21.954 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method list was user-controller
+2019-12-27 15:12:21.956 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.cicoding.integration.web.UserController}]] 
+2019-12-27 15:12:21.956 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method mongo was user-controller
+2019-12-27 15:12:21.957 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Request mapping: mongo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.cicoding.integration.web.UserController}]] 
+2019-12-27 15:12:21.957 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method postUser was user-controller
+2019-12-27 15:12:21.957 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Request mapping: postUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.cicoding.integration.web.UserController}]] 
+2019-12-27 15:12:21.960 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2019-12-27 15:12:21.977 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List(true)
+2019-12-27 15:12:21.977 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.util.List(true)
+2019-12-27 15:12:21.980 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List(true)
+2019-12-27 15:12:21.981 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.util.List(true)
+2019-12-27 15:12:21.984 [main] INFO  s.d.schema.property.ModelPropertiesKeyGenerator - Cache key generated: java.util.List(true)
+2019-12-27 15:12:21.984 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key java.util.List(true)
+2019-12-27 15:12:21.988 [main] INFO  s.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /user/list.com.cicoding.integration.web.UserController.list.DefaultGenericTypeNamingStrategy
+2019-12-27 15:12:21.988 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/list.com.cicoding.integration.web.UserController.list.DefaultGenericTypeNamingStrategy
+2019-12-27 15:12:21.999 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method list was user-controller
+2019-12-27 15:12:22.007 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method list was user-controller
+2019-12-27 15:12:22.013 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:12:22.013 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+2019-12-27 15:12:22.014 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:12:22.014 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2019-12-27 15:12:22.014 [main] INFO  s.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /user/mongo.com.cicoding.integration.web.UserController.mongo.DefaultGenericTypeNamingStrategy
+2019-12-27 15:12:22.014 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/mongo.com.cicoding.integration.web.UserController.mongo.DefaultGenericTypeNamingStrategy
+2019-12-27 15:12:22.014 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method mongo was user-controller
+2019-12-27 15:12:22.015 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method mongo was user-controller
+2019-12-27 15:12:22.016 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:12:22.016 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+2019-12-27 15:12:22.016 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:12:22.016 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2019-12-27 15:12:22.016 [main] INFO  s.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /user/redis.com.cicoding.integration.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2019-12-27 15:12:22.016 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/redis.com.cicoding.integration.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2019-12-27 15:12:22.017 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method postUser was user-controller
+2019-12-27 15:12:22.017 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method postUser was user-controller
+2019-12-27 15:12:22.029 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8898"]
+2019-12-27 15:12:22.050 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-12-27 15:12:22.065 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8898 (http) with context path ''
+2019-12-27 15:12:22.068 [main] INFO  com.cicoding.integration.MmWebApplication - Started MmWebApplication in 6.01 seconds (JVM running for 6.817)
+2019-12-27 15:12:27.542 [http-nio-8898-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 15:12:27.542 [http-nio-8898-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 15:12:27.554 [http-nio-8898-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2019-12-27 15:13:03.644 [http-nio-8898-exec-7] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-12-27 15:13:03.803 [http-nio-8898-exec-7] INFO  c.c.integration.advice.CommonResultResponseAdvice - method: public java.util.List com.cicoding.integration.web.UserController.list(java.util.Map)
+2019-12-27 15:15:34.069 [Thread-15] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 15:15:34.077 [Thread-15] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-27 15:15:34.077 [Thread-15] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-27 15:15:34.121 [Thread-15] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2019-12-27 15:15:34.126 [Thread-15] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-12-27 15:19:48.499 [main] INFO  com.cicoding.integration.MmWebApplication - Starting MmWebApplication on wangjundeMBP.lan with PID 4637 (/Users/wangjun/java-local/spring-boot/cicoding-web/target/classes started by wangjun in /Users/wangjun/java-local/spring-boot)
+2019-12-27 15:19:48.505 [main] INFO  com.cicoding.integration.MmWebApplication - The following profiles are active: dev
+2019-12-27 15:19:49.581 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 15:19:49.583 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-27 15:19:49.674 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.mongo.MyMongoRepository.
+2019-12-27 15:19:49.721 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 117ms. Found 1 repository interfaces.
+2019-12-27 15:19:49.746 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 15:19:49.747 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-27 15:19:49.756 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.UserRepository.
+2019-12-27 15:19:49.760 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 1 repository interfaces.
+2019-12-27 15:19:49.774 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 15:19:49.775 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-27 15:19:49.794 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.mongo.MyMongoRepository.
+2019-12-27 15:19:49.796 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.UserRepository.
+2019-12-27 15:19:49.796 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-12-27 15:19:50.255 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aa71b151] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 15:19:50.432 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$29f1fe83] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 15:19:50.914 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8898 (http)
+2019-12-27 15:19:50.924 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8898"]
+2019-12-27 15:19:50.932 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 15:19:50.932 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-12-27 15:19:50.938 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangjun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-27 15:19:51.044 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-12-27 15:19:51.044 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2489 ms
+2019-12-27 15:19:51.330 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-27 15:19:51.768 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-27 15:19:51.833 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-27 15:19:51.835 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-12-27 15:19:52.097 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-27 15:19:52.231 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-27 15:19:52.992 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@69d902f9'
+2019-12-27 15:19:52.997 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-27 15:19:53.796 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-12-27 15:19:53.876 [cluster-ClusterId{value='5e05b099061a8a121df79f15', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:17}] to localhost:27017
+2019-12-27 15:19:53.881 [cluster-ClusterId{value='5e05b099061a8a121df79f15', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 1]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3016520}
+2019-12-27 15:19:54.756 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 15:19:55.194 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 15:19:55.219 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+2019-12-27 15:19:55.228 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 15:19:55.234 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method list was user-controller
+2019-12-27 15:19:55.236 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.cicoding.integration.web.UserController}]] 
+2019-12-27 15:19:55.237 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method mongo was user-controller
+2019-12-27 15:19:55.237 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Request mapping: mongo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.cicoding.integration.web.UserController}]] 
+2019-12-27 15:19:55.238 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method postUser was user-controller
+2019-12-27 15:19:55.238 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Request mapping: postUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.cicoding.integration.web.UserController}]] 
+2019-12-27 15:19:55.242 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2019-12-27 15:19:55.268 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List(true)
+2019-12-27 15:19:55.269 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.util.List(true)
+2019-12-27 15:19:55.274 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List(true)
+2019-12-27 15:19:55.274 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.util.List(true)
+2019-12-27 15:19:55.278 [main] INFO  s.d.schema.property.ModelPropertiesKeyGenerator - Cache key generated: java.util.List(true)
+2019-12-27 15:19:55.279 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key java.util.List(true)
+2019-12-27 15:19:55.283 [main] INFO  s.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /user/list.com.cicoding.integration.web.UserController.list.DefaultGenericTypeNamingStrategy
+2019-12-27 15:19:55.283 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/list.com.cicoding.integration.web.UserController.list.DefaultGenericTypeNamingStrategy
+2019-12-27 15:19:55.297 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method list was user-controller
+2019-12-27 15:19:55.311 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method list was user-controller
+2019-12-27 15:19:55.319 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:19:55.319 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+2019-12-27 15:19:55.319 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:19:55.319 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2019-12-27 15:19:55.319 [main] INFO  s.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /user/mongo.com.cicoding.integration.web.UserController.mongo.DefaultGenericTypeNamingStrategy
+2019-12-27 15:19:55.319 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/mongo.com.cicoding.integration.web.UserController.mongo.DefaultGenericTypeNamingStrategy
+2019-12-27 15:19:55.320 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method mongo was user-controller
+2019-12-27 15:19:55.321 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method mongo was user-controller
+2019-12-27 15:19:55.321 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:19:55.322 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+2019-12-27 15:19:55.322 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:19:55.322 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2019-12-27 15:19:55.322 [main] INFO  s.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /user/redis.com.cicoding.integration.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2019-12-27 15:19:55.322 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/redis.com.cicoding.integration.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2019-12-27 15:19:55.322 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method postUser was user-controller
+2019-12-27 15:19:55.323 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method postUser was user-controller
+2019-12-27 15:19:55.344 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8898"]
+2019-12-27 15:19:55.367 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-12-27 15:19:55.380 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8898 (http) with context path ''
+2019-12-27 15:19:55.383 [main] INFO  com.cicoding.integration.MmWebApplication - Started MmWebApplication in 8.245 seconds (JVM running for 9.092)
+2019-12-27 15:20:06.172 [http-nio-8898-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 15:20:06.172 [http-nio-8898-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 15:20:06.180 [http-nio-8898-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2019-12-27 15:20:06.367 [http-nio-8898-exec-1] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-12-27 15:20:06.506 [http-nio-8898-exec-1] INFO  c.c.integration.advice.CommonResultResponseAdvice - method: public java.util.List com.cicoding.integration.web.UserController.list(java.util.Map)
+2019-12-27 15:20:14.701 [http-nio-8898-exec-2] INFO  c.c.integration.advice.CommonResultResponseAdvice - method: public java.util.List com.cicoding.integration.web.UserController.list(java.util.Map)
+2019-12-27 15:20:15.324 [http-nio-8898-exec-3] INFO  c.c.integration.advice.CommonResultResponseAdvice - method: public java.util.List com.cicoding.integration.web.UserController.list(java.util.Map)
+2019-12-27 15:20:15.838 [http-nio-8898-exec-4] INFO  c.c.integration.advice.CommonResultResponseAdvice - method: public java.util.List com.cicoding.integration.web.UserController.list(java.util.Map)
+2019-12-27 15:20:15.991 [http-nio-8898-exec-5] INFO  c.c.integration.advice.CommonResultResponseAdvice - method: public java.util.List com.cicoding.integration.web.UserController.list(java.util.Map)
+2019-12-27 15:20:52.482 [Thread-18] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 15:20:52.490 [Thread-18] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-27 15:20:52.491 [Thread-18] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-27 15:20:52.518 [Thread-18] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2019-12-27 15:20:52.523 [Thread-18] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-12-27 15:21:02.720 [main] INFO  com.cicoding.integration.MmWebApplication - Starting MmWebApplication on wangjundeMBP.lan with PID 4715 (/Users/wangjun/java-local/spring-boot/cicoding-web/target/classes started by wangjun in /Users/wangjun/java-local/spring-boot)
+2019-12-27 15:21:02.723 [main] INFO  com.cicoding.integration.MmWebApplication - The following profiles are active: dev
+2019-12-27 15:21:03.614 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 15:21:03.615 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-27 15:21:03.655 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.mongo.MyMongoRepository.
+2019-12-27 15:21:03.688 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66ms. Found 1 repository interfaces.
+2019-12-27 15:21:03.706 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 15:21:03.707 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-27 15:21:03.714 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.UserRepository.
+2019-12-27 15:21:03.716 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 1 repository interfaces.
+2019-12-27 15:21:03.725 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 15:21:03.726 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-27 15:21:03.735 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.mongo.MyMongoRepository.
+2019-12-27 15:21:03.736 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cicoding.integration.UserRepository.
+2019-12-27 15:21:03.737 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2019-12-27 15:21:04.163 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1f4de361] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 15:21:04.272 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$9ece3093] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 15:21:04.625 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8898 (http)
+2019-12-27 15:21:04.636 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8898"]
+2019-12-27 15:21:04.643 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 15:21:04.643 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-12-27 15:21:04.649 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangjun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-27 15:21:04.726 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-12-27 15:21:04.726 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1963 ms
+2019-12-27 15:21:04.971 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-27 15:21:05.312 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-27 15:21:05.392 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-27 15:21:05.393 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-12-27 15:21:05.508 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-27 15:21:05.826 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-27 15:21:06.693 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@e2f6e13'
+2019-12-27 15:21:06.706 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-27 15:21:07.491 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-12-27 15:21:07.623 [cluster-ClusterId{value='5e05b0e3061a8a126b544f91', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:18}] to localhost:27017
+2019-12-27 15:21:07.627 [cluster-ClusterId{value='5e05b0e3061a8a126b544f91', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 1]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2494466}
+2019-12-27 15:21:08.399 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 15:21:08.787 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 15:21:08.802 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+2019-12-27 15:21:08.813 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 15:21:08.817 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method list was user-controller
+2019-12-27 15:21:08.819 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.cicoding.integration.web.UserController}]] 
+2019-12-27 15:21:08.820 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method mongo was user-controller
+2019-12-27 15:21:08.821 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Request mapping: mongo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.cicoding.integration.web.UserController}]] 
+2019-12-27 15:21:08.821 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method postUser was user-controller
+2019-12-27 15:21:08.821 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Request mapping: postUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.cicoding.integration.web.UserController}]] 
+2019-12-27 15:21:08.825 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2019-12-27 15:21:08.848 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List(true)
+2019-12-27 15:21:08.849 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.util.List(true)
+2019-12-27 15:21:08.852 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List(true)
+2019-12-27 15:21:08.853 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.util.List(true)
+2019-12-27 15:21:08.857 [main] INFO  s.d.schema.property.ModelPropertiesKeyGenerator - Cache key generated: java.util.List(true)
+2019-12-27 15:21:08.857 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key java.util.List(true)
+2019-12-27 15:21:08.861 [main] INFO  s.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /user/list.com.cicoding.integration.web.UserController.list.DefaultGenericTypeNamingStrategy
+2019-12-27 15:21:08.862 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/list.com.cicoding.integration.web.UserController.list.DefaultGenericTypeNamingStrategy
+2019-12-27 15:21:08.876 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method list was user-controller
+2019-12-27 15:21:08.890 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method list was user-controller
+2019-12-27 15:21:08.901 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:21:08.901 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+2019-12-27 15:21:08.902 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:21:08.902 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2019-12-27 15:21:08.902 [main] INFO  s.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /user/mongo.com.cicoding.integration.web.UserController.mongo.DefaultGenericTypeNamingStrategy
+2019-12-27 15:21:08.902 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/mongo.com.cicoding.integration.web.UserController.mongo.DefaultGenericTypeNamingStrategy
+2019-12-27 15:21:08.903 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method mongo was user-controller
+2019-12-27 15:21:08.904 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method mongo was user-controller
+2019-12-27 15:21:08.905 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:21:08.905 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+2019-12-27 15:21:08.905 [main] INFO  s.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+2019-12-27 15:21:08.905 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2019-12-27 15:21:08.905 [main] INFO  s.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /user/redis.com.cicoding.integration.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2019-12-27 15:21:08.905 [main] INFO  s.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/redis.com.cicoding.integration.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2019-12-27 15:21:08.906 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method postUser was user-controller
+2019-12-27 15:21:08.906 [main] INFO  s.d.s.web.ClassOrApiAnnotationResourceGrouping - Group for method postUser was user-controller
+2019-12-27 15:21:08.923 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8898"]
+2019-12-27 15:21:08.945 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-12-27 15:21:08.962 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8898 (http) with context path ''
+2019-12-27 15:21:08.966 [main] INFO  com.cicoding.integration.MmWebApplication - Started MmWebApplication in 7.156 seconds (JVM running for 7.912)
+2019-12-27 15:23:26.202 [http-nio-8898-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 15:23:26.202 [http-nio-8898-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 15:23:26.212 [http-nio-8898-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2019-12-27 15:23:26.452 [http-nio-8898-exec-1] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-12-27 15:23:26.550 [http-nio-8898-exec-1] INFO  c.c.integration.advice.CommonResultResponseAdvice - method: public java.util.List com.cicoding.integration.web.UserController.list(java.util.Map)
+2019-12-27 15:25:30.539 [Thread-16] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 15:25:30.557 [Thread-16] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-27 15:25:30.558 [Thread-16] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
