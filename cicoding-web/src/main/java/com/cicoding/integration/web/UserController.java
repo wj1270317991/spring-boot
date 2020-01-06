@@ -5,15 +5,21 @@ import com.cicoding.integration.mongo.MyMongoRepository;
 import com.cicoding.integration.pojo.User;
 import com.cicoding.integration.user.UserService;
 import io.swagger.annotations.ApiOperation;
+import lombok.experimental.Accessors;
 import org.junit.Assert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * com.cicoding.integration.web
@@ -44,6 +50,9 @@ public class UserController {
 
     @Autowired
     private MyMongoRepository myMongoRepository;
+
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
 
 
     @ApiOperation(value = "db", notes = "")
@@ -85,6 +94,44 @@ public class UserController {
         List<User> all = myMongoRepository.findAll();
         return null;
     }
+
+    /**
+     * rabbitmq 简单模式
+     * @return
+     */
+    @ApiOperation(value = "rabbitmq", notes = "")
+    @RequestMapping(value = "rabbitmq", method = RequestMethod.POST)
+    public String rabbitmq() throws Exception{
+        while (true) {
+            Thread.sleep(1000);
+            String messageId = String.valueOf(UUID.randomUUID());
+            String messageData = "test message, hello!";
+            String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+            Map<String, Object> map = new HashMap<>();
+            map.put("messageId", messageId);
+            map.put("messageData", messageData);
+            map.put("createTime", createTime);
+            //将消息携带绑定键值：TestDirectRouting 发送到交换机TestDirectExchange
+            rabbitTemplate.convertAndSend("myqueue", map);
+        }
+    }
+
+
+    /**
+     * rabbitmq2 topic模式
+     * @return
+     * @throws Exception
+     */
+    @ApiOperation(value = "rabbitmq2", notes = "")
+    @RequestMapping(value = "rabbitmq2", method = RequestMethod.POST)
+    public String rabbitmq2() throws Exception{
+        rabbitTemplate.convertAndSend("topic-queue-exchange","order.log.info","order info send ...");
+        rabbitTemplate.convertAndSend("topic-queue-exchange","order.log.warn","order warn send ...");
+        rabbitTemplate.convertAndSend("topic-queue-exchange","sku.log.info","sku info send ...");
+        rabbitTemplate.convertAndSend("topic-queue-exchange","sku.log.warn","sku warn send ...");
+        return null;
+    }
+
 
 
 }
