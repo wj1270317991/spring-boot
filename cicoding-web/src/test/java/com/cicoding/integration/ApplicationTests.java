@@ -8,6 +8,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -61,6 +63,7 @@ public class ApplicationTests {
 
     @Test
     public void test03(){
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext();
         int age = new Person().age();
         Person p = new Person().age(22);
         Person lisi = new Person().age(11).name("lisi");

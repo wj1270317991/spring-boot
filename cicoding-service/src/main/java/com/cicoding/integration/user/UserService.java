@@ -1,5 +1,9 @@
 package com.cicoding.integration.user;
 
+import com.cicoding.integration.User;
+
+import java.util.List;
+
 /**
  * com.cicoding.integration.user
  * <strong>描述：</strong>
@@ -13,4 +17,6 @@ package com.cicoding.integration.user;
 public interface UserService {
 
     String hi();
+
+    List<User> getUsers();
 }

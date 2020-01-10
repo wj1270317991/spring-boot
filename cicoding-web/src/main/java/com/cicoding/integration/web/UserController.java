@@ -69,8 +69,11 @@ public class UserController {
         userRepository.save(new com.cicoding.integration.User("III", 90));
         userRepository.save(new com.cicoding.integration.User("JJJ", 100));
 
-        List<com.cicoding.integration.User> all = userRepository.findAll();
-        return all;
+        //List<com.cicoding.integration.User> all = userRepository.findAll();
+
+        List<com.cicoding.integration.User> users = userService.getUsers();
+
+        return users;
     }
 
 
